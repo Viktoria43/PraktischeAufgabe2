@@ -1,0 +1,19 @@
+package calendar;
+
+import java.util.*;
+import java.io.*;
+
+public class Event {
+    String title;
+    Date date;
+
+    Event(String title, Date date) {
+        this.title = title;
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return title + " on " + date.toString();
+    }
+}

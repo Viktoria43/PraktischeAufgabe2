@@ -1,0 +1,22 @@
+package calendar;
+import java.util.ArrayList;
+import java.util.List;
+public abstract class Month {
+	 protected String name;
+	    protected List<String> events = new ArrayList<>();
+
+	    public Month(String name) {
+	        this.name = name;
+	    }
+
+	    public void addEvent(String event) {
+	        events.add(event);
+	    }
+
+	    public void showEvents() {
+	        System.out.println("Events for " + name + ":");
+	        for (String event : events) {
+	            System.out.println(event);
+	        }
+	    }
+}

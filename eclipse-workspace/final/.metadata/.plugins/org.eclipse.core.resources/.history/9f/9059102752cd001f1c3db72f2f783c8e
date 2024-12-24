@@ -1,0 +1,38 @@
+package calendar;
+import java.util.ArrayList;
+import java.util.List;
+public abstract class Month {
+	 protected String name;
+	    protected List<String> events = new ArrayList<>();
+
+	    public Month(String name) {
+	        this.name = name;
+	    }
+
+	    public void addEvent(String event) {
+	        events.add(event);
+	    }
+
+	    public void removeEvent(String event) {
+	        events.remove(event);
+	    }
+
+	    public boolean hasEvent(String event) {
+	        return events.contains(event);
+	    }
+
+	    public void clearEvents() {
+	        events.clear();
+	    }
+
+	    public void showEvents() {
+	        System.out.println("Events for " + name + ":");
+	        if (events.isEmpty()) {
+	            System.out.println("No events scheduled.");
+	        } else {
+	            for (String event : events) {
+	                System.out.println(event);
+	            }
+	        }
+	    }
+}

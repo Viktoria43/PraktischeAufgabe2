@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature name="Calendar"/>
+	<feature name="January"/>
+	<feature name="February"/>
+	<feature name="March"/>
+	<feature name="April"/>
+	<feature name="May "/>
+	<feature name="June"/>
+	<feature name="July"/>
+	<feature name="August"/>
+	<feature name="September"/>
+	<feature name="October"/>
+	<feature name="November"/>
+	<feature name="December"/>
+</configuration>

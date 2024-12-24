@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="Cal">
+			<graphics key="collapsed" value="false"/>
+			<and abstract="true" name="Base">
+				<graphics key="collapsed" value="false"/>
+				<feature name="January"/>
+				<feature name="February"/>
+				<feature name="March"/>
+				<feature name="April"/>
+				<feature name="May"/>
+				<feature name="June"/>
+				<feature name="July"/>
+				<feature name="August"/>
+				<feature name="September"/>
+				<feature name="October"/>
+				<feature name="November"/>
+				<feature name="December"/>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>January</var>
+				<conj>
+					<not>
+						<var>February</var>
+					</not>
+					<conj>
+						<not>
+							<var>March</var>
+						</not>
+						<conj>
+							<not>
+								<var>April</var>
+							</not>
+							<conj>
+								<not>
+									<var>May</var>
+								</not>
+								<conj>
+									<not>
+										<var>June</var>
+									</not>
+									<conj>
+										<not>
+											<var>July</var>
+										</not>
+										<conj>
+											<not>
+												<var>August</var>
+											</not>
+											<conj>
+												<not>
+													<var>September</var>
+												</not>
+												<conj>
+													<not>
+														<var>October</var>
+													</not>
+													<conj>
+														<not>
+															<var>November</var>
+														</not>
+														<not>
+															<var>December</var>
+														</not>
+													</conj>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>February</var>
+				<conj>
+					<not>
+						<var>January</var>
+					</not>
+					<conj>
+						<not>
+							<var>March</var>
+						</not>
+						<conj>
+							<not>
+								<var>April</var>
+							</not>
+							<conj>
+								<not>
+									<var>May</var>
+								</not>
+								<conj>
+									<not>
+										<var>June</var>
+									</not>
+									<conj>
+										<not>
+											<var>July</var>
+										</not>
+										<conj>
+											<not>
+												<var>August</var>
+											</not>
+											<conj>
+												<not>
+													<var>September</var>
+												</not>
+												<conj>
+													<not>
+														<var>October</var>
+													</not>
+													<conj>
+														<not>
+															<var>November</var>
+														</not>
+														<not>
+															<var>December</var>
+														</not>
+													</conj>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>March</var>
+				<conj>
+					<not>
+						<not>
+							<var>February</var>
+						</not>
+					</not>
+					<conj>
+						<not>
+							<var>April</var>
+						</not>
+						<conj>
+							<not>
+								<var>May</var>
+							</not>
+							<conj>
+								<not>
+									<var>June</var>
+								</not>
+								<conj>
+									<not>
+										<var>July</var>
+									</not>
+									<conj>
+										<not>
+											<var>August</var>
+										</not>
+										<conj>
+											<not>
+												<var>September</var>
+											</not>
+											<conj>
+												<not>
+													<var>October</var>
+												</not>
+												<conj>
+													<not>
+														<var>November</var>
+													</not>
+													<not>
+														<var>December</var>
+													</not>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>April</var>
+				<conj>
+					<not>
+						<not>
+							<var>February</var>
+						</not>
+					</not>
+					<conj>
+						<not>
+							<var>March</var>
+						</not>
+						<conj>
+							<not>
+								<var>May</var>
+							</not>
+							<conj>
+								<not>
+									<var>June</var>
+								</not>
+								<conj>
+									<not>
+										<var>July</var>
+									</not>
+									<conj>
+										<not>
+											<var>August</var>
+										</not>
+										<conj>
+											<not>
+												<var>September</var>
+											</not>
+											<conj>
+												<not>
+													<var>October</var>
+												</not>
+												<conj>
+													<not>
+														<var>November</var>
+													</not>
+													<not>
+														<var>December</var>
+													</not>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>
