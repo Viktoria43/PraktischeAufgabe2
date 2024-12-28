@@ -493,5 +493,29 @@
 			</conj>
 		</imp>
 	</rule>
+	<rule>
+		<imp>
+			<var>Weather Integration</var>
+			<var>Reminders</var>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>Statistics</var>
+			<var>Events</var>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>Export/Import </var>
+			<var>Events</var>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>Recurring Events</var>
+			<var>Events</var>
+		</imp>
+	</rule>
 </constraints>
 </featureModel>
