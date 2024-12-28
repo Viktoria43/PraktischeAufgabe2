@@ -28,19 +28,208 @@
 				<feature name="November"/>
 				<feature name="December"/>
 			</and>
-			<and mandatory="true" name="Events">
-				<feature name="Priorities "/>
+			<and name="Events">
+				<feature mandatory="true" name="Priorities "/>
 				<and name="Reminders">
 					<feature mandatory="true" name="Notifications"/>
 				</and>
+				<feature name="Recurring Events"/>
+				<and name="Export/Import ">
+				<feature name="Statistics"/>
 			</and>
+			<feature name="Weather Integration"/>
 		</and>
-	</struct>
-	<constraints>
-		<rule>
-			<imp>
-				<var>January</var>
-				<not>
+		<feature mandatory="true" name="User Authentication"/>
+	</and>
+</struct>
+<constraints>
+	<rule>
+		<imp>
+			<var>January</var>
+			<not>
+				<conj>
+					<var>February</var>
+					<conj>
+						<var>March</var>
+						<conj>
+							<var>May</var>
+							<conj>
+								<var>June</var>
+								<conj>
+									<var>July</var>
+									<conj>
+										<var>August</var>
+										<conj>
+											<var>September</var>
+											<conj>
+												<var>October</var>
+												<conj>
+													<var>November</var>
+													<var>December</var>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>February</var>
+			<not>
+				<conj>
+					<var>January</var>
+					<conj>
+						<var>March</var>
+						<conj>
+							<var>April</var>
+							<conj>
+								<var>May</var>
+								<conj>
+									<var>June</var>
+									<conj>
+										<var>July</var>
+										<conj>
+											<var>August</var>
+											<conj>
+												<var>September</var>
+												<conj>
+													<var>October</var>
+													<conj>
+														<var>November</var>
+														<var>December</var>
+													</conj>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>March</var>
+			<not>
+				<conj>
+					<var>January</var>
+					<conj>
+						<var>February</var>
+						<conj>
+							<var>April</var>
+							<conj>
+								<var>May</var>
+								<conj>
+									<var>June</var>
+									<conj>
+										<var>July</var>
+										<conj>
+											<var>August</var>
+											<conj>
+												<var>September</var>
+												<conj>
+													<var>October</var>
+													<conj>
+														<var>November</var>
+														<var>December</var>
+													</conj>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>April</var>
+			<not>
+				<conj>
+					<var>February</var>
+					<conj>
+						<var>March</var>
+						<conj>
+							<var>May</var>
+							<conj>
+								<var>June</var>
+								<conj>
+									<var>July</var>
+									<conj>
+										<var>August</var>
+										<conj>
+											<var>September</var>
+											<conj>
+												<var>October</var>
+												<conj>
+													<var>November</var>
+													<var>December</var>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>May</var>
+			<not>
+				<conj>
+					<var>January</var>
+					<conj>
+						<var>February</var>
+						<conj>
+							<var>March</var>
+							<conj>
+								<var>June</var>
+								<conj>
+									<var>July</var>
+									<conj>
+										<var>August</var>
+										<conj>
+											<var>September</var>
+											<conj>
+												<var>October</var>
+												<conj>
+													<var>November</var>
+													<var>December</var>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>June</var>
+			<not>
+				<conj>
+					<var>January</var>
 					<conj>
 						<var>February</var>
 						<conj>
@@ -69,36 +258,33 @@
 							</conj>
 						</conj>
 					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>February</var>
-				<not>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>July</var>
+			<not>
+				<conj>
+					<var>February</var>
 					<conj>
-						<var>January</var>
+						<var>March</var>
 						<conj>
-							<var>March</var>
+							<var>May</var>
 							<conj>
-								<var>April</var>
+								<var>June</var>
 								<conj>
-									<var>May</var>
+									<var>January</var>
 									<conj>
-										<var>June</var>
+										<var>August</var>
 										<conj>
-											<var>July</var>
+											<var>September</var>
 											<conj>
-												<var>August</var>
+												<var>October</var>
 												<conj>
-													<var>September</var>
-													<conj>
-														<var>October</var>
-														<conj>
-															<var>November</var>
-															<var>December</var>
-														</conj>
-													</conj>
+													<var>November</var>
+													<var>December</var>
 												</conj>
 											</conj>
 										</conj>
@@ -107,179 +293,33 @@
 							</conj>
 						</conj>
 					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>March</var>
-				<not>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>August</var>
+			<not>
+				<conj>
+					<var>February</var>
 					<conj>
-						<var>January</var>
+						<var>March</var>
 						<conj>
-							<var>February</var>
+							<var>May</var>
 							<conj>
-								<var>April</var>
+								<var>June</var>
 								<conj>
-									<var>May</var>
-									<conj>
-										<var>June</var>
-										<conj>
-											<var>July</var>
-											<conj>
-												<var>August</var>
-												<conj>
-													<var>September</var>
-													<conj>
-														<var>October</var>
-														<conj>
-															<var>November</var>
-															<var>December</var>
-														</conj>
-													</conj>
-												</conj>
-											</conj>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>April</var>
-				<not>
-					<conj>
-						<var>February</var>
-						<conj>
-							<var>March</var>
-							<conj>
-								<var>May</var>
-								<conj>
-									<var>June</var>
-									<conj>
-										<var>July</var>
-										<conj>
-											<var>August</var>
-											<conj>
-												<var>September</var>
-												<conj>
-													<var>October</var>
-													<conj>
-														<var>November</var>
-														<var>December</var>
-													</conj>
-												</conj>
-											</conj>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>May</var>
-				<not>
-					<conj>
-						<var>January</var>
-						<conj>
-							<var>February</var>
-							<conj>
-								<var>March</var>
-								<conj>
-									<var>June</var>
-									<conj>
-										<var>July</var>
-										<conj>
-											<var>August</var>
-											<conj>
-												<var>September</var>
-												<conj>
-													<var>October</var>
-													<conj>
-														<var>November</var>
-														<var>December</var>
-													</conj>
-												</conj>
-											</conj>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>June</var>
-				<not>
-					<conj>
-						<var>January</var>
-						<conj>
-							<var>February</var>
-							<conj>
-								<var>March</var>
-								<conj>
-									<var>May</var>
-									<conj>
-										<var>June</var>
-										<conj>
-											<var>July</var>
-											<conj>
-												<var>August</var>
-												<conj>
-													<var>September</var>
-													<conj>
-														<var>October</var>
-														<conj>
-															<var>November</var>
-															<var>December</var>
-														</conj>
-													</conj>
-												</conj>
-											</conj>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>July</var>
-				<not>
-					<conj>
-						<var>February</var>
-						<conj>
-							<var>March</var>
-							<conj>
-								<var>May</var>
-								<conj>
-									<var>June</var>
+									<var>July</var>
 									<conj>
 										<var>January</var>
 										<conj>
-											<var>August</var>
+											<var>September</var>
 											<conj>
-												<var>September</var>
+												<var>October</var>
 												<conj>
-													<var>October</var>
-													<conj>
-														<var>November</var>
-														<var>December</var>
-													</conj>
+													<var>November</var>
+													<var>December</var>
 												</conj>
 											</conj>
 										</conj>
@@ -288,33 +328,33 @@
 							</conj>
 						</conj>
 					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>August</var>
-				<not>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>September</var>
+			<not>
+				<conj>
+					<var>February</var>
 					<conj>
-						<var>February</var>
+						<var>March</var>
 						<conj>
-							<var>March</var>
+							<var>May</var>
 							<conj>
-								<var>May</var>
+								<var>June</var>
 								<conj>
-									<var>June</var>
+									<var>July</var>
 									<conj>
-										<var>July</var>
+										<var>August</var>
 										<conj>
 											<var>January</var>
 											<conj>
-												<var>September</var>
+												<var>October</var>
 												<conj>
-													<var>October</var>
-													<conj>
-														<var>November</var>
-														<var>December</var>
-													</conj>
+													<var>November</var>
+													<var>December</var>
 												</conj>
 											</conj>
 										</conj>
@@ -323,33 +363,33 @@
 							</conj>
 						</conj>
 					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>September</var>
-				<not>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>October</var>
+			<not>
+				<conj>
+					<var>February</var>
 					<conj>
-						<var>February</var>
+						<var>March</var>
 						<conj>
-							<var>March</var>
+							<var>May</var>
 							<conj>
-								<var>May</var>
+								<var>June</var>
 								<conj>
-									<var>June</var>
+									<var>July</var>
 									<conj>
-										<var>July</var>
+										<var>August</var>
 										<conj>
-											<var>August</var>
+											<var>September</var>
 											<conj>
 												<var>January</var>
 												<conj>
-													<var>October</var>
-													<conj>
-														<var>November</var>
-														<var>December</var>
-													</conj>
+													<var>November</var>
+													<var>December</var>
 												</conj>
 											</conj>
 										</conj>
@@ -358,33 +398,33 @@
 							</conj>
 						</conj>
 					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>October</var>
-				<not>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>November</var>
+			<not>
+				<conj>
+					<var>February</var>
 					<conj>
-						<var>February</var>
+						<var>March</var>
 						<conj>
-							<var>March</var>
+							<var>May</var>
 							<conj>
-								<var>May</var>
+								<var>June</var>
 								<conj>
-									<var>June</var>
+									<var>July</var>
 									<conj>
-										<var>July</var>
+										<var>August</var>
 										<conj>
-											<var>August</var>
+											<var>September</var>
 											<conj>
-												<var>September</var>
+												<var>October</var>
 												<conj>
 													<var>January</var>
-													<conj>
-														<var>November</var>
-														<var>December</var>
-													</conj>
+													<var>December</var>
 												</conj>
 											</conj>
 										</conj>
@@ -393,99 +433,65 @@
 							</conj>
 						</conj>
 					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>November</var>
-				<not>
-					<conj>
-						<var>February</var>
-						<conj>
-							<var>March</var>
-							<conj>
-								<var>May</var>
-								<conj>
-									<var>June</var>
-									<conj>
-										<var>July</var>
-										<conj>
-											<var>August</var>
-											<conj>
-												<var>September</var>
-												<conj>
-													<var>October</var>
-													<conj>
-														<var>January</var>
-														<var>December</var>
-													</conj>
-												</conj>
-											</conj>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>December</var>
-				<not>
-					<conj>
-						<var>February</var>
-						<conj>
-							<var>March</var>
-							<conj>
-								<var>May</var>
-								<conj>
-									<var>June</var>
-									<conj>
-										<var>July</var>
-										<conj>
-											<var>August</var>
-											<conj>
-												<var>September</var>
-												<conj>
-													<var>October</var>
-													<conj>
-														<var>November</var>
-														<var>January</var>
-													</conj>
-												</conj>
-											</conj>
-										</conj>
-									</conj>
-								</conj>
-							</conj>
-						</conj>
-					</conj>
-				</not>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>Priorities </var>
-				<var>Events</var>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>Reminders</var>
-				<var>Events</var>
-			</imp>
-		</rule>
-		<rule>
-			<imp>
-				<var>Notifications</var>
-				<conj>
-					<var>Reminders</var>
-					<var>Priorities </var>
 				</conj>
-			</imp>
-		</rule>
-	</constraints>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>December</var>
+			<not>
+				<conj>
+					<var>February</var>
+					<conj>
+						<var>March</var>
+						<conj>
+							<var>May</var>
+							<conj>
+								<var>June</var>
+								<conj>
+									<var>July</var>
+									<conj>
+										<var>August</var>
+										<conj>
+											<var>September</var>
+											<conj>
+												<var>October</var>
+												<conj>
+													<var>November</var>
+													<var>January</var>
+												</conj>
+											</conj>
+										</conj>
+									</conj>
+								</conj>
+							</conj>
+						</conj>
+					</conj>
+				</conj>
+			</not>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>Priorities </var>
+			<var>Events</var>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>Reminders</var>
+			<var>Events</var>
+		</imp>
+	</rule>
+	<rule>
+		<imp>
+			<var>Notifications</var>
+			<conj>
+				<var>Reminders</var>
+				<var>Priorities </var>
+			</conj>
+		</imp>
+	</rule>
+</constraints>
 </featureModel>
