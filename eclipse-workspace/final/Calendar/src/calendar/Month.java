@@ -8,10 +8,7 @@ public abstract class Month {
 	    protected List<String> reminders = new ArrayList<>();
 
 
-	    public Month(String name) {
-	        this.name = name;
-	    }
-
+	    // Events
 	    public void addEvent(String event) {
 	        events.add(event);
 	    }
@@ -27,7 +24,7 @@ public abstract class Month {
 	    public void clearEvents() {
 	        events.clear();
 	    }
-	    
+
 	    public int countEvents() {
 	        return events.size();
 	    }
@@ -40,6 +37,119 @@ public abstract class Month {
 	            for (String event : events) {
 	                System.out.println(event);
 	            }
+	        }
+	    }
+
+	    public void duplicateEvents() {
+	        List<String> duplicateEvents = new ArrayList<>(events);
+	        System.out.println("Duplicated events for " + name + ":");
+	        for (String event : duplicateEvents) {
+	            System.out.println(event);
+	        }
+	    }
+
+	    public void reverseShowEvents() {
+	        System.out.println("Reversed events for " + name + ":");
+	        for (int i = events.size() - 1; i >= 0; i--) {
+	            System.out.println(events.get(i));
+	        }
+	    }
+
+	    // Priorities
+	    public void addPriority(String event) {
+	        if (hasEvent(event)) {
+	            priorities.add(event);
+	        }
+	    }
+
+	    public void removePriority(String event) {
+	        priorities.remove(event);
+	    }
+
+	    public boolean hasPriority(String event) {
+	        return priorities.contains(event);
+	    }
+
+	    public void clearPriorities() {
+	        priorities.clear();
+	    }
+
+	    public int countPriorities() {
+	        return priorities.size();
+	    }
+
+	    public void showPriorities() {
+	        System.out.println("Priorities for " + name + ":");
+	        if (priorities.isEmpty()) {
+	            System.out.println("No priorities set.");
+	        } else {
+	            for (String priority : priorities) {
+	                System.out.println(priority);
+	            }
+	        }
+	    }
+
+	    public void duplicatePriorities() {
+	        List<String> duplicatePriorities = new ArrayList<>(priorities);
+	        System.out.println("Duplicated priorities for " + name + ":");
+	        for (String priority : duplicatePriorities) {
+	            System.out.println(priority);
+	        }
+	    }
+
+	    public void reverseShowPriorities() {
+	        System.out.println("Reversed priorities for " + name + ":");
+	        for (int i = priorities.size() - 1; i >= 0; i--) {
+	            System.out.println(priorities.get(i));
+	        }
+	    }
+
+	    // Reminders
+	    public void addReminder(String event) {
+	        if (hasEvent(event)) {
+	            reminders.add(event);
+	        }
+	    }
+
+	    public void removeReminder(String event) {
+	        reminders.remove(event);
+	    }
+
+	    public boolean hasReminder(String event) {
+	        return reminders.contains(event);
+	    }
+
+	    public void clearReminders() {
+	        reminders.clear();
+	    }
+
+	    public int countReminders() {
+	        return reminders.size();
+	    }
+
+	    public void showReminders() {
+	        System.out.println("Reminders for " + name + ":");
+	        if (reminders.isEmpty()) {
+	            System.out.println("No reminders set.");
+	        } else {
+	            for (String reminder : reminders) {
+	                System.out.println(reminder);
+	            }
+	        }
+	    }
+
+	    public void duplicateReminders() {
+	        List<String> duplicateReminders = new ArrayList<>(reminders);
+	        System.out.println("Duplicated reminders for " + name + ":");
+	        for (String reminder : duplicateReminders) {
+	            System.out.println(reminder);
+	        }
+	    }
+
+	    public void reverseShowReminders() {
+	        System.out.println("Reversed reminders for " + name + ":");
+	        for (int i = reminders.size() - 1; i >= 0; i--) {
+	            System.out.println(reminders.get(i));
 	        }
 	    }
 	    
